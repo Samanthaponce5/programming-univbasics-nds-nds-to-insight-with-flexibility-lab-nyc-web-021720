@@ -108,8 +108,8 @@ end
  i = 0 
  arr = [ ]
  while i < source.length 
- name = source[i][:name]
-  movies = source[i][:movie]
+ name = source[i][:names]
+  movies = source[i][:movies]
   arr << movies_with_director_key(name,movies)
   i += 1
   
