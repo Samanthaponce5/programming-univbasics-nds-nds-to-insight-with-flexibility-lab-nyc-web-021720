@@ -108,6 +108,7 @@ end
  i = 0 
  arr = []
  while i < source.length 
+ 
   movies = index[:movie]
   name = index[:name]
   index = source[i]
