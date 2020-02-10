@@ -104,18 +104,19 @@ end
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
   def movies_with_directors_set(source)
-  i = 0
- arrays_of_movies= []
-
-  while i < source.length do
-    dir_info_hash = source[i]
-    director_name = dir_info_hash[:name]
-    directors_movies = dir_info_hash[:movies]
-    arrays_of_movies << movies_with_director_key(director_name, directors_movies)
-    i += 1
-  end
-
-  arrays_of_movies
+  def movies_with_directors_set(source)
+ i = 0 
+ arr = []
+ while i < source.length 
+  movies = source[i][:movie]
+  name = source[i][:name]
+  index = source[i]
+  
+  arr << movies_with_director_key(name,movies)
+  i +=1
+  
+ end
+ arr 
 end
 
 
