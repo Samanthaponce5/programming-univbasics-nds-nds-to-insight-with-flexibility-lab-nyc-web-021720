@@ -114,7 +114,7 @@ end
   i += 1
   
  end
- arr
+ arr.to_h
 end
 
 
