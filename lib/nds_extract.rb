@@ -108,15 +108,14 @@ end
  i = 0 
  arr = []
  while i < source.length 
- index = source[i]
- name = index[:name]
-  movies = index[:movie]
+ name = source[i][:name]
+  movies = source[i][:movie]
   
   arr << movies_with_director_key(name,movies)
-  i +=1
+  i += 1
   
  end
- arr.to_h
+ arr
 end
 
 
