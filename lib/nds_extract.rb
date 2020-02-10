@@ -109,6 +109,7 @@ end
  arr = []
  while i < source.length 
  index = source[i]
+ 
   movies = index[:movie]
   name = index[:name]
   arr << movies_with_director_key(name,movies)
