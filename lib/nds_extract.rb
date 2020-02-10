@@ -109,7 +109,9 @@ def movies_with_directors_set(source)
  i = 0 
  arr = []
  while i < source.length 
+  index = source[i]
   name = source[i][:name]
+  arr << movies_with_director_key
   i +=1
   arr << name
  end
