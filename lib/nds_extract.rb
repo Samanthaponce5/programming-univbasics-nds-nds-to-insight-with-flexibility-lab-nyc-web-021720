@@ -112,9 +112,8 @@ end
  while i < source.length 
  name = source[i]
  
-    movie_with_director_name(director_name, name)
+ arr << movie_with_director_name(director_name, name)
   i +=1
-  arr << 
  end
  arr 
 end
