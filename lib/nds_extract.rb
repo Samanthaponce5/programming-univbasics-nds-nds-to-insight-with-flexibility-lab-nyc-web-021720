@@ -108,10 +108,10 @@ end
  def movies_with_directors_set(source)
  i = 0 
  arr = []
- 
+ total = 0 
  while i < source.length 
  name = source[i]
- total = 0 
+ 
   movie_with_director_name(director_name, movie_data)
   i +=1
   arr << name
