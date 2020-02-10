@@ -111,8 +111,6 @@ end
  index = source[i]
   movies = index[:movie]
   name = index[:name]
-  
-  
   arr << movies_with_director_key(name,movies)
   i +=1
   
